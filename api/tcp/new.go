@@ -3,7 +3,7 @@ package tcp
 import (
 	"net"
 
-	cache "github.com/Hamster601/CacheDemo/internal/"
+	cache "github.com/Hamster601/CacheDemo/internal"
 )
 
 type Server struct {

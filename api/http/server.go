@@ -3,7 +3,7 @@ package server
 import (
 	"net/http"
 
-	cache "github.com/Hamster601/CacheDemo/internal/"
+	cache "github.com/Hamster601/CacheDemo/internal"
 )
 
 //服务端实现
