@@ -67,7 +67,7 @@ func NewCluster(addr, cluster string) (Node, error) {
 	return &node{circle, addr}, nil
 }
 
-// 处理
+// 判断key由哪个节点处理
 func (n *node) ShouldProcess(key string) (string, bool) {
 	addr, _ := n.Get(key)
 	return addr, addr == n.addr
