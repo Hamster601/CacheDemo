@@ -26,7 +26,7 @@ func (n *node) Addr() string {
 	return n.addr
 }
 
-func New(addr, cluster string) (Node, error) {
+func NewCluster(addr, cluster string) (Node, error) {
 	conf := memberlist.DefaultLANConfig()
 	conf.Name = addr
 	conf.BindAddr = addr
